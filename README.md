@@ -26,5 +26,4 @@ https://github.com/yeetric/F360WireGenerator/assets/82407170/346ee334-fdef-468a-
 - **Disable Sweep:** Activating Disable sweep will only generate the spline and not perform the sweep path motion that creates the body
 
 # Diagram
-
-<img src="https://github.com/yeetric/F360WireGenerator/assets/82407170/93a1e2e3-5623-49a5-831a-87d923fd50e1" width="50%">
+<img src="https://github.com/yeetric/F360WireGenerator/assets/82407170/e04d62c7-1589-418a-a366-e50641a6f8a1" width="50%">
