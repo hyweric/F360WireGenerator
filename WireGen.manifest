@@ -1,0 +1,13 @@
+{
+	"autodeskProduct":	"Fusion360",
+	"type":	"addin",
+	"id":	"961DA1B0-3B89-406E-ACC2-4F357FA65775",
+	"author":	"Eric H",
+	"description":	{
+		"":	"genererates wires"
+	},
+	"version":	"1.0.0",
+	"runOnStartup":	true,
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true
+}
