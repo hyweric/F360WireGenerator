@@ -3,6 +3,7 @@
 Automatically generates wires in Fusion 360. 
 
 No more tedious splines or tricky 3D sketches. With this tool, simply select your start and end points, input your parameters, and the program generates several spline variations. Select the right one for your fit, and easily adjust by changing the spline points.  
+## Download from [**Windows**](https://apps.autodesk.com/FUSION/en/Detail/Index?id=1866257341742728249&appLang=en&os=Win64) and  [**Mac**](https://apps.autodesk.com/FUSION/en/Detail/Index?id=1866257341742728249&appLang=en&os=Mac)
 
 # 🧑‍🏫 Demo
 <aside>
