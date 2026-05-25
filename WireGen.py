@@ -218,8 +218,14 @@ class HandlerOneAction (adsk.core.CommandEventHandler):
                 self.splines.append(spline)
 
             cmdDef2 = ui.commandDefinitions.itemById('selectSplineCommand')
-            if not cmdDef2:
-                cmdDef2 = ui.commandDefinitions.addButtonDefinition('selectSplineCommand', 'Select Spline', 'Select the spline')
+            if cmdDef2:
+                cmdDef2.deleteMe()
+
+            cmdDef2 = ui.commandDefinitions.addButtonDefinition(
+                'selectSplineCommand',
+                'Select Spline',
+                'Select the spline'
+            )
 
             onCommandCreated2 = SplineHandlerCreation(self.splines, self.comp)
             cmdDef2.commandCreated.add(onCommandCreated2)
@@ -245,7 +251,9 @@ class SplineHandlerCreation(adsk.core.CommandCreatedEventHandler):
             cmd = args.command
             inputs = cmd.commandInputs
 
-            inputs.addSelectionInput('spline', 'Select a Spline', 'Select the spline')
+            splineInput = inputs.addSelectionInput('spline', 'Select a Spline', 'Select the spline')
+            splineInput.setSelectionLimits(1, 1)
+            splineInput.addSelectionFilter('SketchCurves')
 
             onExecute2 = SplineHandlerAction(self.splines, self.comp)
             cmd.execute.add(onExecute2)
